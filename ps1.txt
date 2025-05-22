@@ -1,0 +1,5 @@
+$action = New-ScheduledTaskAction -Execute "C:\Users\youruser\OneDrive\Desktop\printer-hostblock\dist\blocker_watchdog.exe"
+$trigger = New-ScheduledTaskTrigger -AtLogOn
+$principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -RunLevel Highest
+$task = New-ScheduledTask -Action $action -Trigger $trigger -Principal $principal
+Register-ScheduledTask -TaskName "GameBlocker" -InputObject $task -Force

@@ -1,0 +1,2 @@
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\create_blocker_task.ps1
