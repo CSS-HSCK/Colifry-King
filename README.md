@@ -30,3 +30,29 @@ Make sure to keep the program running for continuous blocking.
 If you restart your computer, run the blocker again with administrator rights.
 
 Only share this program with permission from your school.
+
+
+
+Step-by-step: Create a Scheduled Task to run your blocker on startup with admin rights
+Open Notepad and paste this PowerShell script:
+
+powershell
+Copy
+Edit
+$action = New-ScheduledTaskAction -Execute "C:\Users\youruser\OneDrive\Desktop\printer-hostblock\dist\blocker_watchdog.exe"
+$trigger = New-ScheduledTaskTrigger -AtLogOn
+$principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -RunLevel Highest
+$task = New-ScheduledTask -Action $action -Trigger $trigger -Principal $principal
+Register-ScheduledTask -TaskName "GameBlocker" -InputObject $task -Force
+Replace the path in -Execute with the full path to your built EXE file.
+
+Save the file as create_blocker_task.ps1 (make sure extension is .ps1).
+
+Run PowerShell as Administrator, then run:
+
+powershell
+Copy
+Edit
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\create_blocker_task.ps1
+This will create a scheduled task named GameBlocker that runs your blocker EXE as SYSTEM with highest privileges at every logon.
