@@ -1,34 +1,32 @@
-# 🐔 Colifry-King v1.0.0 (Definitely Not Malware™)
+README for Game Blocker
+What is this?
+This is a website blocker program that stops access to popular online gaming sites by modifying the Windows hosts file.
 
-## ⚙️ How To Use?
+Why use it?
+To help keep students focused during school hours.
 
-### 1)  
-Run the software. When the screen shows:
-**`i did read I DO ACCEPT EVERYTHING`** — click it bravely.  
-This is legally binding. Maybe.
+Prevents playing games on Chrome or other browsers during breaks.
 
-### 2)  
-Once you're in the ultra-advanced menu:
-Click on the following **critical system permissions**:
+Required by the school principal to maintain discipline.
 
-- ✅ `i do allow on the device crompware.23`
-- ✅ `freeware.32 (very trustable)`
+How to use?
+Run the blocker program as Administrator
 
-Trust us, it's safe. Mostly.
+Right-click on blocker_watchdog.exe
 
----
+Select Run as administrator
+This is necessary so the program can modify the system’s hosts file.
 
-## 🔍 v-filog Mode (Very Technical)
+The blocker will immediately start blocking the listed gaming sites.
 
-**Software Verifed!!!** (spelling intentional)  
-System logs will display advanced verification data such as:
+To stop blocking, you will need to remove the entries manually or run an unblocker (if available).
 
-## ✅ It looks like Malware
-It is not! It is A type Of Software Works for this script
-freeware.32 can look like (ADWARE) it is way diffrent 
-freeware is money maker it is free for 3 days then u need to pay 0.49$ to the software 
+List of blocked websites includes:
+coolmathgames.com, poki.com, miniclip.com, y8.com, roblox.com, and many more popular gaming sites.
 
+Important Notes
+Make sure to keep the program running for continuous blocking.
 
-## ✅ Does freeware.32 Pop ups
-It does we need money but It is easy to Delete Go to the System33 folder
-Then search up this freeware.32 and delete but if u delete it wont work
+If you restart your computer, run the blocker again with administrator rights.
+
+Only share this program with permission from your school.
